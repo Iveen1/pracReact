@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(55deg, #4a5d9b, #78317e);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.wheather {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.wheather div{
+    display: inline-block;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.card {
+    font-family: sans-serif;
+    width: 150px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    margin-top: 100px;
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, red, orange);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 90px;
+}
+
+.card p {
+    margin: 0;
+}
